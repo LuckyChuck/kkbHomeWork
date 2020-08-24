@@ -33,3 +33,5 @@ for((i=0;i<${#TABLE_ARRAY[@]};i++)) do
    beeline -e "alter table "${TABLE_ARRAY[i]}" drop partition (hdfs_date_dt='"${SEVEN_DAYS_AGO}"')"
     echo "清除分区:"$TABLE_PATH"(hdfs_date_dt="${SEVEN_DAYS_AGO}") 完成" 
 done;
+
+echo 'lala'
